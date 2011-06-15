@@ -13,5 +13,11 @@ public class Application extends Controller {
         List<Book> books = Book.findAll();
         render(books);
     }
+    
+    public static void borrowBook(Long bookId) {
+        Book book = Book.findById(bookId);
+        book.checkOut();
+        index();
+    }
 
 }

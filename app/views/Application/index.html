@@ -33,6 +33,9 @@
           ${book.isCheckedOut ? 'Checked Out' : 'Available'}
         </td>
         <td>
+          #{if !book.isCheckedOut} 
+            #{form @Application.borrowBook(book.id)}<input type="submit" value="Borrow" />#{/form}
+          #{/if}
         </td>
       </tr>#{/list}
     </tbody>
