@@ -1,0 +1,9 @@
+eclipse
+.settings
+.project
+.classpath
+tmp
+logs
+test-result
+*~
+
