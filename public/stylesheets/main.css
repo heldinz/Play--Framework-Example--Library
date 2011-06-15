@@ -1,0 +1,58 @@
+html, body {
+    background: #B0B0B0;
+    font-family: Helvetica, Arial, Sans;
+}
+
+body {
+    width: 1000px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+#header {
+    display: block;
+    height: 49px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -4px;
+    text-shadow: 1px 2px 2px #000;
+}
+
+#main {
+    background: #314660;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    padding: 100px 20px 20px 20px;
+}
+
+form input {
+    margin: -16px 0 0 10px;
+    padding: 1px;
+}
+
+.success {
+    background: #67AD10;
+    color: #fff;
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-box-shadow: 0 2px 0 #4E840B; 
+}
+
+#books {
+    background: #EEEEEE;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+table thead th {
+    text-align: left;
+}
+
+table td {
+    vertical-align: top;
+}
