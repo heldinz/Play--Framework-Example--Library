@@ -1,4 +1,40 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
-
-#{welcome /}
+#{set title:'Library' /}
+<div id="header">
+  <h1>Our Library</h1>
+</div>
+<div id="main">
+  <table id="books">
+    <thead>
+      <tr>
+        <th>
+          Title
+        </th>
+        <th>
+          Author
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      #{list items:books, as:'book' }
+      <tr>
+        <td>
+          ${book.title}
+        </td>
+        <td>
+          ${book.author}
+        </td>
+        <td>
+          ${book.isCheckedOut ? 'Checked Out' : 'Available'}
+        </td>
+        <td>
+        </td>
+      </tr>#{/list}
+    </tbody>
+  </table>
+</div>
