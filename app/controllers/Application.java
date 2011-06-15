@@ -17,6 +17,7 @@ public class Application extends Controller {
     public static void borrowBook(Long bookId) {
         Book book = Book.findById(bookId);
         book.checkOut();
+        flash.success("You have checked out %s", book.title);
         index();
     }
 

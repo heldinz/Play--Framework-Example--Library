@@ -4,6 +4,9 @@
   <h1>Our Library</h1>
 </div>
 <div id="main">
+  #{if flash.success}
+    <p class="success">${flash.success}</p>
+  #{/if}
   <table id="books">
     <thead>
       <tr>
